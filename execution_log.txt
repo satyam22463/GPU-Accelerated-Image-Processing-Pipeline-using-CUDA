@@ -1,0 +1,21 @@
+=== CUDA Image Processor ===
+GPU: NVIDIA GeForce RTX 3070  (SM 8.6, 46 MPs, 8.0 GB)
+
+[1] Processing: test_512.ppm
+  Loaded: input/test_512.ppm  (512 x 512)
+    -> grayscale : output/test_512_gray.pgm   (0.041 ms)
+    -> blurred   : output/test_512_blur.pgm   (0.053 ms)
+    -> edges     : output/test_512_edges.pgm  (0.047 ms)
+
+[2] Processing: test_1024.ppm
+  Loaded: input/test_1024.ppm  (1024 x 1024)
+    -> grayscale : output/test_1024_gray.pgm   (0.149 ms)
+    -> blurred   : output/test_1024_blur.pgm   (0.187 ms)
+    -> edges     : output/test_1024_edges.pgm  (0.171 ms)
+
+=== Summary (2 images) ===
+  Grayscale kernel total : 0.190 ms
+  Gaussian blur total    : 0.240 ms
+  Sobel edge total       : 0.218 ms
+  Grand total (kernels)  : 0.648 ms
+Output files written to : output/
